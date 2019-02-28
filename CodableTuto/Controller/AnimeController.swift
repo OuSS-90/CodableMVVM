@@ -13,12 +13,12 @@ class AnimeController: UITableViewController {
     let headerId = "headerId"
     let cellId = "cellId"
     
-    var anime: Anime?
+    var animeViewModel: AnimeViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = anime?.title
+        navigationItem.title = animeViewModel?.title
         
         tableView.register(HeaderViewCell.self, forHeaderFooterViewReuseIdentifier: headerId)
         tableView.register(AnimeViewCell.self, forCellReuseIdentifier: cellId)
@@ -37,7 +37,7 @@ class AnimeController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerId) as! HeaderViewCell
-        header.imageV.loadImage(imageUrl: anime?.imageUrl)
+        header.imageV.loadImage(imageUrl: animeViewModel?.imageUrl)
         return header.contentView
     }
     
@@ -47,7 +47,7 @@ class AnimeController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! AnimeViewCell
-        cell.descLabel.text = anime?.synopsis
+        cell.descLabel.text = animeViewModel?.synopsis
         return cell
     }
 

@@ -11,7 +11,7 @@ import UIKit
 class AnimeListController: UITableViewController {
     
     let cellId = "cellId"
-    var animes = [Anime]()
+    var animes = [AnimeViewModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class AnimeListController: UITableViewController {
         tableView.register(AnimeListCell.self, forCellReuseIdentifier: cellId)
         
         AnimeService.instance.getAnimeList { (season) in
-            self.animes = season.anime
+            self.animes = season.anime.map{AnimeViewModel(anime: $0)}
             self.tableView.reloadData()
         }
     }
@@ -38,13 +38,13 @@ class AnimeListController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! AnimeListCell
-        cell.anime = animes[indexPath.row]
+        cell.animeViewModel = animes[indexPath.row]
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let animeController = AnimeController(style: .grouped)
-        animeController.anime = animes[indexPath.row]
+        animeController.animeViewModel = animes[indexPath.row]
         navigationController?.pushViewController(animeController, animated: true)
     }
 }

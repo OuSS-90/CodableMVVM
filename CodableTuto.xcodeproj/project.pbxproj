@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD75891C222837DC009F14E9 /* AnimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD75891B222837DC009F14E9 /* AnimeViewModel.swift */; };
 		CDEDC9FD222193DA004DDA63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDC9FC222193DA004DDA63 /* AppDelegate.swift */; };
 		CDEDC9FF222193DA004DDA63 /* AnimeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDC9FE222193DA004DDA63 /* AnimeListController.swift */; };
 		CDEDCA02222193DA004DDA63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEDCA00222193DA004DDA63 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD75891B222837DC009F14E9 /* AnimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewModel.swift; sourceTree = "<group>"; };
 		CDEDC9F9222193DA004DDA63 /* CodableTuto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodableTuto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEDC9FC222193DA004DDA63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDEDC9FE222193DA004DDA63 /* AnimeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD7589192228375D009F14E9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CDEDCA192221C4B7004DDA63 /* AnimeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CD75891A222837BE009F14E9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD75891B222837DC009F14E9 /* AnimeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		CDEDC9F0222193DA004DDA63 = {
 			isa = PBXGroup;
 			children = (
@@ -71,7 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				CDEDCA1D2221CD8F004DDA63 /* Utils */,
+				CD7589192228375D009F14E9 /* Service */,
 				CDEDCA102221941C004DDA63 /* Model */,
+				CD75891A222837BE009F14E9 /* ViewModel */,
 				CDEDCA0F22219419004DDA63 /* View */,
 				CDEDCA0E22219414004DDA63 /* Controller */,
 				CDEDC9FC222193DA004DDA63 /* AppDelegate.swift */,
@@ -87,10 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				CDEDC9FE222193DA004DDA63 /* AnimeListController.swift */,
-				CDEDCA1522219A22004DDA63 /* AnimeListCell.swift */,
 				CDEDCA1E2221E1B3004DDA63 /* AnimeController.swift */,
-				CDEDCA202221E2BA004DDA63 /* HeaderViewCell.swift */,
-				CDEDCA222221E957004DDA63 /* AnimeViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,7 +115,9 @@
 		CDEDCA0F22219419004DDA63 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CDEDCA172221B03B004DDA63 /* Anime.swift */,
+				CDEDCA1522219A22004DDA63 /* AnimeListCell.swift */,
+				CDEDCA202221E2BA004DDA63 /* HeaderViewCell.swift */,
+				CDEDCA222221E957004DDA63 /* AnimeViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,7 +125,7 @@
 		CDEDCA102221941C004DDA63 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CDEDCA192221C4B7004DDA63 /* AnimeService.swift */,
+				CDEDCA172221B03B004DDA63 /* Anime.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,6 +220,7 @@
 				CDEDCA1A2221C4B7004DDA63 /* AnimeService.swift in Sources */,
 				CDEDCA1F2221E1B3004DDA63 /* AnimeController.swift in Sources */,
 				CDEDCA1222219883004DDA63 /* Extensions+UIView.swift in Sources */,
+				CD75891C222837DC009F14E9 /* AnimeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

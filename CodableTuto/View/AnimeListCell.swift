@@ -10,11 +10,11 @@ import UIKit
 
 class AnimeListCell: UITableViewCell {
     
-    var anime: Anime? {
+    var animeViewModel: AnimeViewModel? {
         didSet {
-            titleLabel.text = anime?.title
-            descLabel.text = anime?.synopsis
-            imageV.loadImage(imageUrl: anime?.imageUrl)
+            titleLabel.text = animeViewModel?.title
+            descLabel.text = animeViewModel?.synopsis
+            imageV.loadImage(imageUrl: animeViewModel?.imageUrl)
         }
     }
     
