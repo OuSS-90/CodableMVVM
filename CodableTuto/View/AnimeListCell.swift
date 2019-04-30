@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import SDWebImage
 
 class AnimeListCell: UITableViewCell {
     
-    var animeViewModel: AnimeViewModel? {
+    var anime: Anime? {
         didSet {
-            titleLabel.text = animeViewModel?.title
-            descLabel.text = animeViewModel?.synopsis
-            imageV.loadImage(imageUrl: animeViewModel?.imageUrl)
+            titleLabel.text = anime?.title
+            descLabel.text = anime?.synopsis
+            guard let imageUrl = anime?.imageUrl else { return }
+            imageV.sd_setImage(with: URL(string: imageUrl))
         }
     }
     
@@ -31,8 +33,8 @@ class AnimeListCell: UITableViewCell {
         return label
     }()
     
-    let imageV: CustomImageView = {
-        let imageView = CustomImageView()
+    let imageV: UIImageView = {
+        let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         return imageView

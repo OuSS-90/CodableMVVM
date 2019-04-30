@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A3049AFF198C68F51CB52FB /* Pods_CodableTuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8D41935315CC6766738184 /* Pods_CodableTuto.framework */; };
 		CD75891C222837DC009F14E9 /* AnimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD75891B222837DC009F14E9 /* AnimeViewModel.swift */; };
+		CD8BD6EA226CF027009C79CA /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BD6E9226CF027009C79CA /* Bindable.swift */; };
+		CD8BD6EC226CF0BE009C79CA /* AnimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BD6EB226CF0BE009C79CA /* AnimesViewModel.swift */; };
 		CDEDC9FD222193DA004DDA63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDC9FC222193DA004DDA63 /* AppDelegate.swift */; };
-		CDEDC9FF222193DA004DDA63 /* AnimeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDC9FE222193DA004DDA63 /* AnimeListController.swift */; };
+		CDEDC9FF222193DA004DDA63 /* AnimesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDC9FE222193DA004DDA63 /* AnimesController.swift */; };
 		CDEDCA02222193DA004DDA63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEDCA00222193DA004DDA63 /* Main.storyboard */; };
 		CDEDCA04222193DB004DDA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDEDCA03222193DB004DDA63 /* Assets.xcassets */; };
 		CDEDCA07222193DB004DDA63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEDCA05222193DB004DDA63 /* LaunchScreen.storyboard */; };
@@ -17,17 +20,19 @@
 		CDEDCA1622219A22004DDA63 /* AnimeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDCA1522219A22004DDA63 /* AnimeListCell.swift */; };
 		CDEDCA182221B03B004DDA63 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDCA172221B03B004DDA63 /* Anime.swift */; };
 		CDEDCA1A2221C4B7004DDA63 /* AnimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDCA192221C4B7004DDA63 /* AnimeService.swift */; };
-		CDEDCA1C2221CD86004DDA63 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDCA1B2221CD86004DDA63 /* CachedImageView.swift */; };
-		CDEDCA1F2221E1B3004DDA63 /* AnimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDCA1E2221E1B3004DDA63 /* AnimeController.swift */; };
-		CDEDCA212221E2BA004DDA63 /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDCA202221E2BA004DDA63 /* HeaderViewCell.swift */; };
-		CDEDCA232221E957004DDA63 /* AnimeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDCA222221E957004DDA63 /* AnimeViewCell.swift */; };
+		CDEDCA1F2221E1B3004DDA63 /* DetailsAnimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEDCA1E2221E1B3004DDA63 /* DetailsAnimeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72E390EE4875616409A08166 /* Pods-CodableTuto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodableTuto.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodableTuto/Pods-CodableTuto.release.xcconfig"; sourceTree = "<group>"; };
+		7E8D41935315CC6766738184 /* Pods_CodableTuto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodableTuto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B044FC32309AEF713617F5A9 /* Pods-CodableTuto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodableTuto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodableTuto/Pods-CodableTuto.debug.xcconfig"; sourceTree = "<group>"; };
 		CD75891B222837DC009F14E9 /* AnimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewModel.swift; sourceTree = "<group>"; };
+		CD8BD6E9226CF027009C79CA /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		CD8BD6EB226CF0BE009C79CA /* AnimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimesViewModel.swift; sourceTree = "<group>"; };
 		CDEDC9F9222193DA004DDA63 /* CodableTuto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodableTuto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEDC9FC222193DA004DDA63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDEDC9FE222193DA004DDA63 /* AnimeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListController.swift; sourceTree = "<group>"; };
+		CDEDC9FE222193DA004DDA63 /* AnimesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimesController.swift; sourceTree = "<group>"; };
 		CDEDCA01222193DA004DDA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDEDCA03222193DB004DDA63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDEDCA06222193DB004DDA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,10 +41,7 @@
 		CDEDCA1522219A22004DDA63 /* AnimeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListCell.swift; sourceTree = "<group>"; };
 		CDEDCA172221B03B004DDA63 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
 		CDEDCA192221C4B7004DDA63 /* AnimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeService.swift; sourceTree = "<group>"; };
-		CDEDCA1B2221CD86004DDA63 /* CachedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
-		CDEDCA1E2221E1B3004DDA63 /* AnimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeController.swift; sourceTree = "<group>"; };
-		CDEDCA202221E2BA004DDA63 /* HeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCell.swift; sourceTree = "<group>"; };
-		CDEDCA222221E957004DDA63 /* AnimeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewCell.swift; sourceTree = "<group>"; };
+		CDEDCA1E2221E1B3004DDA63 /* DetailsAnimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAnimeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +49,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3049AFF198C68F51CB52FB /* Pods_CodableTuto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76628A886B1F2F7457D709DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B044FC32309AEF713617F5A9 /* Pods-CodableTuto.debug.xcconfig */,
+				72E390EE4875616409A08166 /* Pods-CodableTuto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD7589192228375D009F14E9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +76,7 @@
 		CD75891A222837BE009F14E9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CD8BD6EB226CF0BE009C79CA /* AnimesViewModel.swift */,
 				CD75891B222837DC009F14E9 /* AnimeViewModel.swift */,
 			);
 			path = ViewModel;
@@ -74,6 +87,8 @@
 			children = (
 				CDEDC9FB222193DA004DDA63 /* CodableTuto */,
 				CDEDC9FA222193DA004DDA63 /* Products */,
+				76628A886B1F2F7457D709DC /* Pods */,
+				DB2E84DBE2D5132EB00A07DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,8 +121,8 @@
 		CDEDCA0E22219414004DDA63 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CDEDC9FE222193DA004DDA63 /* AnimeListController.swift */,
-				CDEDCA1E2221E1B3004DDA63 /* AnimeController.swift */,
+				CDEDC9FE222193DA004DDA63 /* AnimesController.swift */,
+				CDEDCA1E2221E1B3004DDA63 /* DetailsAnimeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,8 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				CDEDCA1522219A22004DDA63 /* AnimeListCell.swift */,
-				CDEDCA202221E2BA004DDA63 /* HeaderViewCell.swift */,
-				CDEDCA222221E957004DDA63 /* AnimeViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,9 +147,17 @@
 			isa = PBXGroup;
 			children = (
 				CDEDCA1122219883004DDA63 /* Extensions+UIView.swift */,
-				CDEDCA1B2221CD86004DDA63 /* CachedImageView.swift */,
+				CD8BD6E9226CF027009C79CA /* Bindable.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DB2E84DBE2D5132EB00A07DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E8D41935315CC6766738184 /* Pods_CodableTuto.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDEDCA0B222193DB004DDA63 /* Build configuration list for PBXNativeTarget "CodableTuto" */;
 			buildPhases = (
+				566B0D1A4A08293F927479B5 /* [CP] Check Pods Manifest.lock */,
 				CDEDC9F5222193DA004DDA63 /* Sources */,
 				CDEDC9F6222193DA004DDA63 /* Frameworks */,
 				CDEDC9F7222193DA004DDA63 /* Resources */,
+				CC1B7C04ABDBB1535D51CD3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,22 +228,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		566B0D1A4A08293F927479B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodableTuto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC1B7C04ABDBB1535D51CD3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CodableTuto/Pods-CodableTuto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodableTuto/Pods-CodableTuto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CDEDC9F5222193DA004DDA63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CDEDCA1622219A22004DDA63 /* AnimeListCell.swift in Sources */,
-				CDEDCA1C2221CD86004DDA63 /* CachedImageView.swift in Sources */,
-				CDEDCA212221E2BA004DDA63 /* HeaderViewCell.swift in Sources */,
 				CDEDCA182221B03B004DDA63 /* Anime.swift in Sources */,
-				CDEDC9FF222193DA004DDA63 /* AnimeListController.swift in Sources */,
-				CDEDCA232221E957004DDA63 /* AnimeViewCell.swift in Sources */,
+				CDEDC9FF222193DA004DDA63 /* AnimesController.swift in Sources */,
+				CD8BD6EC226CF0BE009C79CA /* AnimesViewModel.swift in Sources */,
 				CDEDC9FD222193DA004DDA63 /* AppDelegate.swift in Sources */,
 				CDEDCA1A2221C4B7004DDA63 /* AnimeService.swift in Sources */,
-				CDEDCA1F2221E1B3004DDA63 /* AnimeController.swift in Sources */,
+				CDEDCA1F2221E1B3004DDA63 /* DetailsAnimeController.swift in Sources */,
 				CDEDCA1222219883004DDA63 /* Extensions+UIView.swift in Sources */,
 				CD75891C222837DC009F14E9 /* AnimeViewModel.swift in Sources */,
+				CD8BD6EA226CF027009C79CA /* Bindable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,14 +427,12 @@
 		};
 		CDEDCA0C222193DB004DDA63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B044FC32309AEF713617F5A9 /* Pods-CodableTuto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodableTuto/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ouss.CodableTuto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -381,14 +442,12 @@
 		};
 		CDEDCA0D222193DB004DDA63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72E390EE4875616409A08166 /* Pods-CodableTuto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodableTuto/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ouss.CodableTuto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

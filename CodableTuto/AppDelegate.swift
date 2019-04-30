@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow()
-        let animeListController = AnimeListController()
+        let animeListController = AnimesController()
         let navController = UINavigationController(rootViewController: animeListController)
         window?.rootViewController = navController
         
