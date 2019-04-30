@@ -8,15 +8,22 @@
 
 import Foundation
 
+enum animeError: Error {
+    case noData
+}
+
 class AnimeService {
     
     static let instance = AnimeService()
     let baseURL = "https://api.jikan.moe/v3/"
     
     
-    func getAnimeList(completion: @escaping (_ season: Season) -> Void) {
+    func getAnimeList(completion: @escaping (_ result: Result<Season,Error>) -> Void) {
         
-        guard let url = URL(string: baseURL + "season/2019/winter") else { return }
+        guard let url = URL(string: baseURL + "season/2019/winter") else {
+            completion(.failure(animeError.noData))
+            return
+        }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
@@ -24,12 +31,12 @@ class AnimeService {
             do {
                 let season = try JSONDecoder().decode(Season.self, from: data)
                 DispatchQueue.main.async {
-                    completion(season)
+                    completion(.success(season))
                 }
             } catch let err {
                 print(err)
             }
-        }.resume()
+            }.resume()
     }
     
 }

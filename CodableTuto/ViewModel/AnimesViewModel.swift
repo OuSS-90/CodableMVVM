@@ -14,9 +14,16 @@ struct AnimesViewModel {
     
     func fetchAnimes() {
         isLoading.value = true
-        AnimeService.instance.getAnimeList { (season) in
+        AnimeService.instance.getAnimeList { (result) in
             self.isLoading.value = false
-            self.animes.value = season.anime
+            
+            switch result {
+            case .success(let season):
+                self.animes.value = season.anime
+            case .failure(let error):
+                print(error)
+            }
         }
     }
 }
+
