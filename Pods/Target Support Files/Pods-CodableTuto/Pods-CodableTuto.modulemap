@@ -1,0 +1,6 @@
+framework module Pods_CodableTuto {
+  umbrella header "Pods-CodableTuto-umbrella.h"
+
+  export *
+  module * { export * }
+}

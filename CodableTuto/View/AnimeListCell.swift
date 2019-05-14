@@ -11,11 +11,11 @@ import SDWebImage
 
 class AnimeListCell: UITableViewCell {
     
-    var anime: Anime? {
+    var animeViewModel: AnimeViewModel? {
         didSet {
-            titleLabel.text = anime?.title
-            descLabel.text = anime?.synopsis
-            guard let imageUrl = anime?.imageUrl else { return }
+            titleLabel.text = animeViewModel?.title
+            descLabel.text = animeViewModel?.synopsis
+            guard let imageUrl = animeViewModel?.imageUrl else { return }
             imageV.sd_setImage(with: URL(string: imageUrl))
         }
     }

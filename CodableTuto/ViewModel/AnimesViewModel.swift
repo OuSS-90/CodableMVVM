@@ -9,7 +9,7 @@
 import Foundation
 
 struct AnimesViewModel {
-    var animes = Bindable<[Anime]>()
+    var animes = Bindable<[AnimeViewModel]>()
     var isLoading = Bindable<Bool>()
     
     func fetchAnimes() {
@@ -19,7 +19,7 @@ struct AnimesViewModel {
             
             switch result {
             case .success(let season):
-                self.animes.value = season.anime
+                self.animes.value = season.anime.map{AnimeViewModel(anime: $0)}
             case .failure(let error):
                 print(error)
             }

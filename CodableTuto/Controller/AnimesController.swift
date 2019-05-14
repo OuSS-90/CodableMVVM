@@ -61,14 +61,13 @@ class AnimesController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! AnimeListCell
-        cell.anime = animesViewModel.animes.value?[indexPath.row]
+        cell.animeViewModel = animesViewModel.animes.value?[indexPath.row]
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let animeController = DetailsAnimeController()
-        guard let anime = animesViewModel.animes.value?[indexPath.row] else { return }
-        animeController.animeViewModel = AnimeViewModel(anime: anime)
+        animeController.animeViewModel = animesViewModel.animes.value?[indexPath.row]
         navigationController?.pushViewController(animeController, animated: true)
     }
 }
